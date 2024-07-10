@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <com.kotlin.book.TitleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,5 +25,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="点击按钮" />
+
+    <EditText
+        android:id="@+id/etBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:hint="12345"
+        />
+
+    <ImageView
+        android:id="@+id/ivShow"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/pbShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:progressBarStyleHorizontal"
+        android:max="100"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btToRecy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到列表页"/>
+
+    <Button
+        android:id="@+id/btToFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到Fragment"/>
+
+    <Button
+        android:id="@+id/btToNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到通知页"/>
 
 </LinearLayout>
